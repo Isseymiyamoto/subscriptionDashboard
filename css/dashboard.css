@@ -1,0 +1,62 @@
+body {
+  background: #f0f1f4;
+}
+
+.data_container {
+  width: 80%;
+  margin: 100px auto 50px auto;
+}
+
+.data_container h1 {
+  color: #384359;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.main {
+  background-color: white;
+  /* height: 1000px; */
+  padding-bottom: 100px;
+}
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.totalMoney h1 {
+  margin: 0;
+  font-size: 20px;
+  padding-top: 60px;
+  margin: 60px 0;
+}
+
+.priceItems {
+  width: 70%;
+}
+
+.priceItems h1 {
+  padding-top: 0;
+  border-left: 3px solid rgb(56, 67, 89);
+  padding-left: 10px;
+}
+
+.howOften {
+  width: 70%;
+}
+
+.howOften h1 {
+  padding-top: 0;
+  border-left: 3px solid rgb(56, 67, 89);
+  padding-left: 10px;
+}
+
+.per1Price h1 {
+  padding-top: 0;
+  border-left: 3px solid rgb(56, 67, 89);
+  padding-left: 10px;
+}
+
+.per1Price {
+  width: 70%;
+}

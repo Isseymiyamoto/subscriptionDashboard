@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>登録画面</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/regi.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="register">
+        <div class="container">
+          <div class="search-header">
+            <h1>契約しているサブスクリプションサービスを登録しましょう</h1>
+          </div>
+          <div class="search">
+            <div class="search-left kensaku">
+              <div class="container">
+                <h1>サブスリプションサービスはここから検索できます</h1>
+                <h2>ジャンルから検索</h2>
+                <select name="type-subsc" id="subsc-type-select">
+                  <option value="">--Please choose an option--</option>
+                  <option value="music">音楽サービス</option>
+                  <option value="movie">動画配信サービス</option>
+                  <option value="programming">プログラミング</option>
+                </select>
+                <h2>サービス名を入力する</h2>
+                <input type="text" id="kashira" placeholder="入力は任意です" />
+                <div class="submit-go">
+                  <button type="submit" id="search-go">検索する</button>
+                </div>
+              </div>
+            </div>
+            <div class="result-right kensaku">
+              <div class="container">
+                <h1>追加したサービスを表示します</h1>
+                <div id="add-list"></div>
+              </div>
+            </div>
+          </div>
+          <div class="finish-btn">
+            <button type="submit" id="visualization-btn">
+              Start Visualization
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="result-modal">
+      <div id="return-btn">×</div>
+      <div class="sub-items"></div>
+    </div>
+
+    <div class="dashboard-modal">
+      <div id="return-btn2">×</div>
+      <div class="data_container">
+        <h1>データ</h1>
+        <div class="main">
+          <div class="main-container">
+            <div class="totalMoney">
+              <h1 id="totalMoney">合計金額</h1>
+
+              <div class="priceItems">
+                <h1>料金内訳</h1>
+                <canvas id="pie_price"></canvas>
+              </div>
+              <div class="howOften">
+                <h1>各サービス使用頻度</h1>
+                <canvas id="bar_howOften"></canvas>
+              </div>
+
+              <div class="per1Price">
+                <h1>利用一回当たりの料金</h1>
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
